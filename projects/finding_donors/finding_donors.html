@@ -12800,6 +12800,7 @@ Each weak learner is given a subset of the training data. What would be the next
 <p>Usually the DecisionTreeClassifier with a small max_depth is taken as a weak learner for AdaBoost. A decision tree is doing hyper rectangular boundaries from a dataset, and a small max_depth makes it quite primitive.</p>
 <p>If we compare the DecisionTreeClassifier with big max_depth and AdaBoost with DecisionTreeClassifier with small max_depth, usually AdaBoost performs better. This is because  in DecisionTreeClassifier the decision making is hierarchical: First boundary is cut using some data dimension, the next boundary is done on each side of a previous boundary - "left" and "right", and so on. And these boundaries are hierarchical - the first cut is more important than the last cut.</p>
 <p>In AdaBoost there are many different first cuts (each weak learner has its own first cut) on different data, these cuts are not hierarchical. The big number of weak learners and absence of hiearchy between them usually allows to get better results.</p>
+<p>[<a href="http://mccormickml.com/2013/12/13/adaboost-tutorial/">http://mccormickml.com/2013/12/13/adaboost-tutorial/</a>]</p>
 
 </div>
 </div>
